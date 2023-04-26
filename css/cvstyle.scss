@@ -1,0 +1,196 @@
+/* font imports */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500);
+
+/* declare variables */
+$bg: #E8F1F2;
+$font-base: #13293D;
+$color-strong: #AD0000;
+$link-color: #1B98E0;
+$link-hover: #13293D;
+$font-heading: 'Josefin Sans', cwtexyen, sans-serif;
+$heading-font: 'Source Code Pro', monospace;
+$font-heading-size: 50px;
+$tag-pri: #13293D;
+$tag-sec: #E8F1F2;
+
+/* mixins */
+@mixin tag($back, $font) {
+  display: inline-block;
+  padding: 8px;
+  background: $back;
+  color: $font;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* keyframes */
+@keyframes change-text {
+  0%, 55%, 100% {
+    transform: translateY(-45%);
+  }
+  5%, 50% {
+    transform: translateY(-95%);
+  }
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+}
+
+@keyframes text-blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* document css */
+body {
+  box-sizing: border-box;
+  color: $font-base;
+  font-family: $font-heading;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+}
+a:hover {
+  color: $link-hover;
+}
+
+.wrapper {
+  margin: 5% 10%;
+}
+
+.heading {
+  background-color: $bg;
+  padding: 5%;
+  text-align: center;
+}
+
+.heading h1 {
+  margin: 0 auto;
+  font-family: $heading-font;
+  font-size: $font-heading-size;
+  font-weight: 500;
+  animation: 8s typing steps(16, end), 0.5s text-blink step-end infinite;
+  width: 9.6em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+
+.heading h1@media screen and (max-width: $h1-break-width) {
+  font-size: 30px;
+}
+
+.sm-name {
+  display: none;
+  color: $font-heading;
+}
+
+.sm-name@media screen and (max-width: $h1-break-width) {
+  display: block;
+}
+
+.name {
+  margin-top: 10px;
+  height: $font-heading-size + 2px;
+  overflow: hidden;
+}
+
+.name@media screen and (max-width: $h1-break-width) {
+  display: none;
+}
+
+.name ul {
+  list-style: none;
+  padding: 0;
+  color: $font-heading;
+  font-size: $font-heading-size;
+  animation: 8s change-text linear infinite;
+}
+
+.name ul li {
+  padding-top: 5px;
+  line-height: $font-heading-size + 2px;
+}
+
+.social ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.social ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.block h2:first-letter {
+  font-size: 30px;
+  color: #006494;
+}
+
+.block h2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.block ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info .email:before {
+  content: 'candy02058912@gmail.com';
+}
+
+.research {
+  color: $color-strong;
+}
+
+.pri-tag {
+  @include tag($tag-pri, $tag-sec);
+}
+
+.sec-tag {
+  @include tag($tag-sec, $tag-pri);
+}
+
+.about p:before {
+  content: '\00a0\00a0\00a0\00a0';
+}
+
+.degree, .exp-item {
+  h3 {
+    margin: 10px 0 5px 0;
+    padding: 0;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.exp-item ul {
+  list-style: square;
+  padding-left: 15px;
+}
+
+.exp-item ul li {
+  padding-top: 5px;
+}
+
+.profile {
+  background-size: 100%;
+  border-radius: 50%;
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+}

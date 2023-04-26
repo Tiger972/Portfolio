@@ -1,0 +1,185 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/earlyaccess/cwtexyen.css");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500");
+@keyframes change-text {
+  0%, 55%, 100% {
+    transform: translateY(-45%);
+  }
+  5%, 50% {
+    transform: translateY(-95%);
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+}
+@keyframes text-blink {
+  50% {
+    border-color: transparent;
+  }
+}
+body {
+  box-sizing: border-box;
+  color: #E8F1F2;
+  font-family: "Josefin Sans", cwtexyen, sans-serif;
+  background-color: #080808;
+}
+
+a {
+  text-decoration: none;
+  color: #1B98E0;
+}
+a:hover {
+  color: #13293D;
+}
+
+.wrapper {
+  margin: 5% 10%;
+}
+
+.heading {
+  background-color: #080808;
+  padding: 5%;
+  text-align: center;
+}
+.heading h1 {
+  margin: 0 auto;
+  font-family: "Source Code Pro", monospace;
+  font-size: 50px;
+  font-weight: 500;
+  animation: 8s typing steps(16, end), 0.5s text-blink step-end infinite;
+  width: 9.6em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+}
+@media screen and (max-width: 550px) {
+  .heading h1 {
+    font-size: 30px;
+  }
+}
+
+.sm-name {
+  display: none;
+  color: #006494;
+}
+@media screen and (max-width: 550px) {
+  .sm-name {
+    display: block;
+  }
+}
+
+.name {
+  margin-top: 10px;
+  height: 52px;
+  overflow: hidden;
+}
+@media screen and (max-width: 550px) {
+  .name {
+    display: none;
+  }
+}
+.name ul {
+  list-style: none;
+  padding: 0;
+  color: #006494;
+  font-size: 50px;
+  animation: 8s change-text linear infinite;
+  margin: 0;
+}
+.name ul li {
+  padding-top: 5px;
+  line-height: 52px;
+}
+
+.social ul {
+  list-style: none;
+  padding-left: 0;
+}
+.social ul a {
+  color: #13293D;
+}
+.social ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.block h2::first-letter {
+  font-size: 30px;
+  color: #006494;
+}
+.block h2 {
+  font-family: "Source Code Pro", monospace;
+  border-bottom: 2px solid;
+}
+.block ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.info .email::before {
+  content: "candy02058912@gmail.com";
+}
+
+.research {
+  color: #AD0000;
+}
+
+.pri-tag {
+  display: inline-block;
+  padding: 8px;
+  background: #13293D;
+  color: #E8F1F2;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.sec-tag {
+  display: inline-block;
+  padding: 8px;
+  background: #E8F1F2;
+  color: #13293D;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.about p::before {
+  content: "    ";
+}
+
+.degree h3, .exp-item h3 {
+  margin: 10px 0 5px 0;
+  padding: 0;
+}
+.degree p, .exp-item p {
+  margin: 0;
+  padding: 0;
+}
+.degree .exp-item ul, .exp-item .exp-item ul {
+  list-style: square;
+  padding-left: 15px;
+}
+.degree .exp-item ul li, .exp-item .exp-item ul li {
+  padding-top: 5px;
+}
+
+.profile {
+  background-size: 100%;
+  border-radius: 50%;
+  margin: 20px auto;
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  background-image: url(facecv.jpeg);
+}
+
+.exp-item p{
+  width: 40%;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 20px;
+}

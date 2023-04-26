@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <title>Project</title>
+  <link rel="stylesheet" href="../css/projet.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+<header class="dark:bg-black dark:text-gray-100">
+  <div class="flex justify-between mr-10 ml-10 m-4">
+    <img src="../img/logo.png" alt="Logo" class="mr-10 h-12 w-auto">
+    <div class="relative">
+      <button class="dropdown-button inline-flex cursor-pointer select-none items-center rounded-lg bg-blue-600 px-4 py-2.5 text-center text-sm font-medium text-white focus:outline-none focus:ring-4 focus:ring-blue-300 hover:bg-blue-700">
+        <label for="dropdown-open" class="absolute left-0 block h-full w-full cursor-pointer"> </label>
+        Project <svg class="ml-2 h-4 w-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+      </button>
+      <input type="checkbox" class="peer hidden" id="dropdown-open"/>
+      <!-- Dropdown menu -->
+      <div class="peer-checked:block z-10 mt-2 hidden w-44 right-0 divide-y divide-gray-100 rounded border bg-white shadow absolute">
+        <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdownDefault">
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Projet 1</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Projet 2</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Projet 3</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Projet 4</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Projet 5</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Projet 6</a>
+          </li>
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Projet 7</a>
+          </li>
+        </ul>
+        <ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdownDefault">
+          <li>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Sign out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+<body>
+
+<section class="py-6 dark:bg-black dark:text-gray-100">
+  <div class="container flex flex-col items-center justify-center p-4 mx-auto space-y-8 sm:p-10">
+    <h1 class="text-4xl font-bold leading-none text-center sm:text-5xl">Nos Projets</h1>
+    <p class="max-w-2xl text-center dark:text-gray-400 text-base sm:text-3xl"> Grâce à ma formation, j'ai eu l'opportunité d'apprendre diverses compétences grâce aux projets que j'ai menés. En effet, ces projets m'ont permis de mettre en pratique les connaissances théoriques acquises en cours, mais également de développer mes capacités d'analyse, de résolution de problèmes et de collaboration en équipe. J'ai également appris à être plus créatif et à trouver des solutions innovantes pour atteindre les objectifs fixés. Grâce à ces projets, j'ai pu acquérir une expérience concrète dans mon domaine d'études et être mieux préparé pour ma carrière professionnelle future. </p>
+    <div class="flex flex-row flex-wrap-reverse justify-center">
+      <div class="flex flex-col justify-center m-8 text-center">
+        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full " src="../img/linux.png">
+        <p class="text-xl font-semibold leading-tight">Linux</p>
+      </div>
+      <div class="flex flex-col justify-center m-8 text-center">
+        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full " src="../img/Windows_logo_-_2012.svg.png">
+        <p class="text-xl font-semibold leading-tight">Windows</p>
+      </div>
+      <div class="flex flex-col justify-center m-8 text-center">
+        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full " src="../img/Python-logo-notext.svg.png">
+        <p class="text-xl font-semibold leading-tight"> Python</p>
+      </div>
+      <div class="flex flex-col justify-center m-8 text-center">
+        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full " src="../img/c-programming.png">
+        <p class="text-xl font-semibold leading-tight">C</p>
+      </div>
+      <div class="flex flex-col justify-center m-8 text-center">
+        <img alt="" class="self-center flex-shrink-0 w-24 h-24 mb-4 bg-center bg-cover rounded-full " src="../img/php.png">
+        <p class="text-xl font-semibold leading-tight">PHP</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <div class="slide-container swiper">
+    <div class="slide-content">
+      <div class="card-wrapper swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="../img/projet-1-intervenant.jpg" alt="" class="card-img">
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="name text-4xl font-bold leading-none text-center sm:text-5xl mb-4">Projet : Communication Personnel </h2>
+            <p class="description max-w-2xl mx-auto text-center text-xl dark:text-gray-400 sm:text-2xl">
+              Le projet mené par l'intervenante Sarah Peillon avait pour objectif de développer notre capacité d'expression orale et comprenait plusieurs compétences essentielles. Tout d'abord, nous avons eu l'opportunité de réaliser une présentation orale devant une audience de 60 personnes, ce qui nous a permis d'acquérir une expérience précieuse en matière de communication en public. Nous avons appris à gérer notre temps de parole de manière efficace, ce qui est crucial pour maintenir l'attention de l'audience. Nous avons également travaillé sur l'expression orale en utilisant les bons mots et la bonne posture, de manière fluide et adaptée, afin de communiquer clairement notre message.
+
+              En outre, le projet nous a permis de développer notre éloquence et notre force de persuasion, ce qui nous a aidés à transmettre efficacement nos idées. Nous avons appris à répondre aux questions posées en public en développant notre capacité à penser rapidement et à fournir des réponses claires et précises. Enfin, nous avons eu l'occasion de développer notre esprit critique en posant des questions à d'autres groupes lors de leurs présentations, ce qui nous a aidés à améliorer notre capacité à analyser et à comprendre les différents points de vue.</p>
+            <a href="https://guardia.school/" class="button">View More</a>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="../img/Python1.PNG" alt="" class="card-img">
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="name text-4xl font-bold leading-none text-center sm:text-5xl mb-4">Projet : Python</h2>
+            <p class="description max-w-2xl mx-auto text-center text-xl dark:text-gray-400 sm:text-2xl">Le premier projet consiste à développer nos compétences en programmation sur Python. Nous allons apprendre à rédiger des algorithmes simples et complexes et à utiliser LARP, un outil logarithmique. Nous allons également développer plusieurs mini-jeux en Python sous l'éditeur de texte vim (Debian 11) et maîtriser les lignes de commande sous Debian 11 pour créer des fichiers, gérer des fichiers de configurations et optimiser notre espace de travail. Nous allons également utiliser les fonctionnalités de Github pour mettre en ligne les différentes versions de nos codes sources et utiliser des lignes de développement indépendantes (branches) pour créer différentes versions instantanées de notre code en faisant des commits et créer des accès aux fichiers distants avec des remotes. Ce projet est conçu pour nous aider à maîtriser les compétences essentielles en programmation sur Python, ce qui sera bénéfique pour notre avenir professionnel et personnel.</p>
+
+            <a href="https://guardia.school/" class="button">View More</a>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="../img/Edouard.PNG" alt="" class="card-img">
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="name text-4xl font-bold leading-none text-center sm:text-5xl mb-4">Projet : Introduction aux Systèmes Informatique</h2>
+            <p class="description max-w-2xl mx-auto text-center text-xl dark:text-gray-400 sm:text-2xl">Le deuxième projet réalisé avec l'intervenant Edward MARQUIS consiste à développer nos compétences techniques dans la création, la configuration et la sécurisation avancée d'un serveur Linux sous n'importe quelle distribution. Nous allons apprendre à expliquer la différence entre les principaux systèmes d'exploitation (Windows et Linux) et distinguer les distributions Linux et leurs cas d'usage. Nous allons également apprendre à créer un serveur Debian 10 sur un VPS ou une VM, à le configurer pour se connecter de manière sécurisée et à installer des services tels que SSH, SFTP, Apache 2, MySQL, PHP 8.1, Postfix et Dovecot. Nous allons également apprendre à installer ISPConfig 3.2 et à le configurer dans les moindres détails, en ajoutant un nom de domaine et un sous-domaine en DNS avec ISPConfig pour pouvoir installer un site web fonctionnel hébergé sur le serveur Debian. Ce projet est conçu pour nous aider à maîtriser les compétences essentielles en création et sécurisation de serveurs Linux, ce qui sera bénéfique pour notre avenir professionnel.</p>
+
+            <a href="https://guardia.school/" class="button">View More</a>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="../img/Html.PNG" alt="" class="card-img">
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="name text-4xl font-bold leading-none text-center sm:text-5xl mb-4">Projet : HTML/CSS</h2>
+            <p class="description max-w-2xl mx-auto text-center text-xl dark:text-gray-400 sm:text-2xl">Le troisième projet réalisé avec l'intervenant Antoine DI ROBERTO consiste à créer un site portfolio (responsive) avec des frameworks CSS et en codant plusieurs fonctionnalités en JavaScript. Nous allons apprendre à créer un portfolio en HTML5 et CSS3 avec les normes W3C et Lighthouse proposé par Google. Nous allons également apprendre à gérer le responsive de notre site pour que le site soit accessible depuis n'importe quel appareil et à créer des scripts en JavaScript (JQuery) pour rendre le site plus interactif. Ce projet est conçu pour nous aider à maîtriser les compétences essentielles en création de sites web, ce qui sera bénéfique pour notre avenir professionnel et personnel.</p>
+
+            <a href="https://guardia.school/" class="button">View More</a>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="../img/Reseau.PNG" alt="" class="card-img">
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="name text-4xl font-bold leading-none text-center sm:text-5xl mb-4">Projet : Réseau </h2>
+            <p class="description max-w-2xl mx-auto text-center text-xl dark:text-gray-400 sm:text-2xl">Le projet, réalisé avec l'intervenant Nicolas Alphonso, visait à comprendre les fondamentaux des réseaux et à mettre en place un réseau simple sur un environnement Windows Server. Pour ce faire, un serveur Debian 11 équipé de DHCP et Apache a été monté, ainsi qu'un Active Directory avec GPO et un serveur DNS sur Windows Server 2022. Plusieurs clients Windows et Linux ont été créés pour constituer le réseau, et un routeur sur Debian 11 a été mis en place pour servir de passerelle à Internet. Les participants ont appris à gérer les différentes couches du modèle OSI, à anticiper les pannes et à cartographier un réseau complet. Enfin, le projet a permis de mettre en place un réseau dans des conditions réelles d'utilisation avec des systèmes d'exploitation récents et de maîtriser les serveurs et clients grâce au GPO.</p>
+
+            <a href="https://guardia.school/" class="button">View More</a>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="../img/PPRO.PNG" alt="" class="card-img">
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="name text-4xl font-bold leading-none text-center sm:text-5xl mb-4"> Projet : PHP/SQL </h2>
+            <p class="description max-w-2xl mx-auto text-center text-xl dark:text-gray-400 sm:text-2xl">Le projet, réalisé avec l'intervenant Antoine Di Roberto, avait pour objectif d'automatiser un site internet en utilisant PHP et MySQL. Les compétences acquises comprenaient la programmation en PHP et SQL, la création et la modélisation de bases de données grâce à la méthode MCD sur le logiciel Looping, et l'automatisation des enregistrements en base de données via des formulaires en utilisant les méthodes GET/POST. De plus, un système d'authentification avec des droits d'accès via un panel administrateur a été mis en place et des mesures de sécurité ont été prises pour protéger le site contre les failles XSS et les injections SQL
+            </p>
+
+            <a href="https://guardia.school/" class="button">View More</a>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="../img/Scrap.jpg" alt="" class="card-img">
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="name text-4xl font-bold leading-none text-center sm:text-5xl mb-4">Projet : Scrapping </h2>
+            <p class="description max-w-2xl mx-auto text-center text-xl dark:text-gray-400 sm:text-2xl">Le projet de scrapping, réalisé avec l'intervenant Alexandre Quilan, avait pour objectif d'extraire des données de sites web de manière automatisée. Les compétences acquises comprenaient la compréhension des techniques de scrapping, la sélection des éléments HTML pertinents à l'aide des sélecteurs CSS, et l'utilisation de bibliothèques telles que Beautiful Soup ou Scrapy pour analyser et extraire les données. De plus, les participants ont appris à gérer les problèmes de pagination et de navigation, à respecter les politiques d'utilisation des sites web cibles et à stocker les données extraites de manière structurée pour une utilisation ultérieure. Enfin, le projet a permis de mettre en pratique ces compétences en développant un programme de scrapping pour un cas d'utilisation réel.</p>
+
+            <a href="https://guardia.school/" class="button">View More</a>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="../img/C.jpg" alt="" class="card-img">
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="name text-4xl font-bold leading-none text-center sm:text-5xl mb-4">Projet : Programmation en C</h2>
+            <p class="description max-w-2xl mx-auto text-center text-xl dark:text-gray-400 sm:text-2xl ">Le projet, réalisé avec l'intervenant Alexandre Quilan, avait pour objectif de développer un jeu de Takuzu en utilisant le langage de programmation C. Les compétences acquises comprenaient la maîtrise des concepts fondamentaux du langage C, tels que les structures de contrôle, les fonctions, les pointeurs et la gestion de la mémoire. Les participants ont également appris à concevoir et implémenter des algorithmes pour gérer les règles du jeu de Takuzu, à créer une interface utilisateur conviviale en mode texte, et à gérer les entrées et les sorties pour assurer une expérience de jeu fluide. Enfin, le projet a permis aux participants de mettre en pratique ces compétences en développant un jeu de Takuzu fonctionnel, offrant un défi stimulant et amusant pour les joueurs.</p>
+
+            <a href="https://guardia.school/" class="button">View More</a>
+          </div>
+        </div>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="../img/Resaux2.jpg" alt="" class="card-img">
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="name text-4xl font-bold leading-none text-center sm:text-5xl mb-4">Projet : Création d'un Réseau d'entreprise </h2>
+            <p class="description max-w-2xl mx-auto text-center text-xl dark:text-gray-400 sm:text-2xl">Le projet, réalisé avec l'intervenant Damien Cifelli, avait pour objectif d'explorer les concepts de réseaux et la mise en place d'un réseau sécurisé à l'aide d'OPNsense. Les compétences acquises comprenaient la compréhension des principes de base des réseaux, la configuration et la gestion d'un pare-feu OPNsense, ainsi que la mise en place de règles de sécurité et de filtrage pour protéger le réseau. Les participants ont également appris à configurer les services VPN et NAT, à surveiller les performances du réseau et à détecter les menaces potentielles. Enfin, le projet a permis aux participants de mettre en pratique ces compétences en créant et en gérant un réseau sécurisé, en assurant une protection efficace contre les cyberattaques et en offrant un environnement fiable pour les utilisateurs.</p>
+
+            <a href="https://guardia.school/" class="button">View More</a>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <span class="overlay"></span>
+
+            <div class="card-image">
+              <img src="../img/Cyber.jpg" alt="" class="card-img">
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="name text-4xl font-bold leading-none text-center sm:text-5xl mb-4">Projet : Cybersécurité </h2>
+            <p class="description max-w-2xl mx-auto text-center text-xl dark:text-gray-400 sm:text-2xl ">Le projet, réalisé avec l'intervenant Gautier Filardo, visait à initier les participants aux bases de la cybersécurité et à leur faire comprendre l'importance de protéger les systèmes et les réseaux contre les menaces en ligne. Les compétences acquises comprenaient la compréhension des principales notions de cybersécurité, telles que la confidentialité, l'intégrité et la disponibilité des données, la reconnaissance des principales menaces et vulnérabilités, ainsi que les bonnes pratiques pour assurer la sécurité des informations. Les participants ont également été initiés aux mécanismes de défense, tels que les pare-feu, les antivirus et les systèmes de détection d'intrusion, et ont appris à mettre en place des politiques de sécurité efficaces. Enfin, le projet a permis aux participants de mettre en pratique ces connaissances de base en identifiant et en abordant les problèmes de sécurité dans un scénario réel, renforçant ainsi leur capacité à protéger les actifs numériques et à réagir aux incidents de cybersécurité.</p>
+            <a href="https://guardia.school/" class="button">View More</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="../js/swiper-bundle.min.js"></script>
+<script src="../js/style.js"></script>
+
+</body>
+</html>
